@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Send, Mail, Phone, MapPin, Instagram } from 'lucide-react';
 
 const Contact = ({ theme = { 
-  primary: "#22c55e", 
-  primaryLight: "#4ade80", 
+  primary: "blue", 
+  primaryLight: "#blue -light", 
   black: "#111827" 
 } }) => {
   const [isVisible, setIsVisible] = useState({
@@ -105,7 +105,7 @@ const Contact = ({ theme = {
       `;
       
       // Create mailto link with encoded parameters
-      const mailtoLink = `mailto:TeamMandeSOBO@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:jassymande@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       
       // Open email client
       window.location.href = mailtoLink;
@@ -142,9 +142,9 @@ const Contact = ({ theme = {
       <div className="max-w-7xl mx-auto">
         <div className="animate-section" id="contact-header">
           <div className={`text-center mb-8 sm:mb-12 transition-all duration-1000 ${isVisible['contact-header'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-2xl sm:text-3xl font-bold text-black">Contact Us</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-black">Contact Me</h2>
             <p className="text-lg sm:text-xl text-gray-800 mt-4 max-w-3xl mx-auto">
-              Have questions or want to get involved? Reach out to Viongozi wako!
+              Have questions or want to enquire about my services? Feel free to reach out! I'm here to help you with your creative needs.
             </p>
           </div>
         </div>
@@ -221,14 +221,14 @@ const Contact = ({ theme = {
               style={{ backgroundColor: theme.black }}
               className={`text-white p-6 sm:p-8 rounded-xl shadow-lg h-full transition-all duration-1000 delay-300 ${isVisible['contact-info'] ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
             >
-              <h3 className="text-xl sm:text-2xl font-bold mb-6">Connect With Us</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6">Let's Connect </h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
                   <Mail style={{ color: theme.primaryLight }} className="w-5 h-5 sm:w-6 sm:h-6 mr-4 mt-1" />
                   <div>
                     <p className="font-semibold text-lg">Email</p>
-                    <p className="text-gray-300">TeamMandeSOBO@gmail.com</p>
+                    <p className="text-gray-300">jassymande@gmail.com</p>
                   </div>
                 </div>
                 
@@ -243,13 +243,13 @@ const Contact = ({ theme = {
                 <div className="flex items-start">
                   <MapPin style={{ color: theme.primaryLight }} className="w-5 h-5 sm:w-6 sm:h-6 mr-4 mt-1" />
                   <div>
-                    <p className="font-semibold text-lg">Find Us</p>
-                    <p className="text-gray-300">Kila Corner Ya LKC<br />Lower Kabete Campus</p>
+                    <p className="font-semibold text-lg">Find Me</p>
+                    <p className="text-gray-300"><br />Lower Kabete - Nairobi</p>
                   </div>
                 </div>
                 
                 <div className="pt-4">
-                  <p className="font-semibold text-lg mb-4">Follow Our Campaign</p>
+                  
                   <div className="flex space-x-4">
                     <a 
                       href="#" 
